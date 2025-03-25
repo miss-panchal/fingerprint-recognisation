@@ -1,19 +1,37 @@
-# fingerprint-recognisation                                                         BY: ANSHUL , NIKUNJ
- implement fingerprint recognisation system using SIFT algorithm . the system aime to match altered or damaged fingerprint images with real fingerprint images to identify and authenticate individuals . 
- 
-**ABSTRACT**
+# Fingerprint Recognition System  
+### BY: ANSHUL, NIKUNJ  
 
-Fingerprints scanners are security systems of biometrics. Everyone has patterns of frictions ridges on their fingers, and it is this pattern that is called fingerprint. Fingerprints are uniquely detailed, durable over an individual’s lifetime, and difficult to alter. Because there are countless combinations, fingerprints have become an ideal means of identification. They are used in police stations, security industries, Smartphone, and other mobile devices.
- 
-So, in our project we have two directories inside of the main directory and those contain images of fingerprints now the real directory contains images of actual fingerprint so we can see here always a number then a character representing a gender so the number is the id of the main character is gender and then the name of the fingerprint. For example - left index finger and all the files are real fingerprints without any modifications and then we also have the altered directory and inside of the altered directory we have three sub- directories, easy, medium, hard, then we have data sets then by using an external library open cv in which we take the altered image and then we will find the real fingerprints.
+## 📌 Overview  
+This project implements a **Fingerprint Recognition System** using the **SIFT (Scale-Invariant Feature Transform) algorithm**. The system aims to match **altered or damaged fingerprint images** with real fingerprint images to identify and authenticate individuals.  
 
-**Tools and Technology Used**
+## 📝 Abstract  
+Fingerprint scanners are widely used **biometric security systems**. Every individual has unique friction ridge patterns on their fingers, making fingerprints an **ideal means of identification**. They remain **unchanged throughout a person’s lifetime** and are difficult to alter. Due to their uniqueness, fingerprints are commonly used in **law enforcement, security industries, smartphones, and other devices**.  
 
-In this project we are going to use python as main language. With the help of some prebuild libraries or python such as cv2 which is open cv in python and os which help us to fetch directory (folder/file location) to get its contents in our code.
+In this project, we have two directories inside the **main directory**, containing images of fingerprints:  
+- **Real Directory**: Contains unmodified, authentic fingerprint images. Each file follows a naming convention, including an **ID, gender, and fingerprint type** (e.g., "left index finger").  
+- **Altered Directory**: Contains fingerprint images categorized into three levels of alterations:  
+  - **Easy**  
+  - **Medium**  
+  - **Hard**  
 
-OpenCV: OpenCV is a Python open-source library, which is used for computer vision in Artificial intelligence, Machine Learning, face recognition, etc.
-In OpenCV, the CV is an abbreviation form of a computer vision, which is defined as a field of study that helps computers to understand the content of the digital images such as photographs and videos. So, import it using the statement before using its functions. 
-OS module
-import os
-The OS module in Python provides functions for creating and removing a directory (folder), fetching its contents, changing and identifying the current directory, etc. first we need to import the os module to interact with the underlying operating system. So, import it using the statement before using its functions.
- 
+Using **OpenCV**, the system compares altered fingerprints with real fingerprints to find an exact match.  
+
+## 🛠️ Tools and Technologies Used  
+This project is implemented in **Python** using the following libraries:  
+
+### 🔹 OpenCV (cv2)  
+- OpenCV is an open-source **computer vision** library used for AI, Machine Learning, face recognition, and **fingerprint recognition**.  
+- It allows image processing, feature extraction, and pattern matching.  
+
+### 🔹 OS Module  
+- The **os module** in Python helps interact with the **file system**, allowing us to **fetch directories, access file locations, and retrieve file contents** dynamically.  
+
+## 📷 How It Works  
+1. **Preprocessing**: Load and analyze the dataset of real and altered fingerprint images.  
+2. **Feature Extraction**: Use the **SIFT algorithm** to extract fingerprint features.  
+3. **Matching & Authentication**: Compare altered fingerprints against real fingerprints using OpenCV.  
+
+## 🚀 Future Improvements  
+- Enhance accuracy using **Deep Learning models (CNNs)**.  
+- Implement a **Graphical User Interface (GUI)** for easy interaction.  
+- Support **real-time fingerprint scanning**.  
